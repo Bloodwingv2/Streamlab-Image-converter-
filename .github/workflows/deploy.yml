@@ -1,21 +1,17 @@
-name: Render Deployment
+name: Deploy to Render
 
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v2
-      
-      - name: Deploy to Render
-        env:
-          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}  # Using the secret API key
+        
+      - name: Trigger Render Deployment
         run: |
-          curl -X POST https://api.render.com/deploy \
-            -H "Authorization: Bearer $RENDER_API_KEY" \
-            -d '{"service": "ImageConverter", "branch": "main"}'
+          curl -X POST "https://api.render.com/deploy/srv-csm6e4ggph6c73adhhbg?key=6uokxsIYgm4"
