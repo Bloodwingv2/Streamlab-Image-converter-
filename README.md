@@ -1,10 +1,15 @@
 # Online Image Converter: Local & Global Access with Future Scalability
-This Online Image Converter is designed for both local and global access, with room for future feature expansion. It consists of two main components:
+The Online Image Converter offers both local and global access, built to scale and accommodate future enhancements. It consists of two main components:
 
-Backend (Flask): The Flask backend handles all image conversion tasks, such as grayscale, edge detection, and contour detection, ensuring efficient processing and results.
+Backend (Flask):
+The Flask backend handles image conversions like grayscale, edge detection, and contour detection, ensuring efficient processing.
 
-Frontend (Streamlit): The user-friendly Streamlit frontend allows users to upload images, select conversions, and view results seamlessly, interacting with the Flask-powered backend.
+Frontend (Streamlit):
+The Streamlit frontend provides an intuitive interface for users to upload images, select conversion options, and view results seamlessly.
 
-This simple system serves as a learning tool for understanding the integration of frontend (Streamlit) and backend (Flask), offering a scalable foundation for future enhancements. While basic, it ensures high performance and scalability for both local and global use.
-
-The following Project has been Deployed on https://streamlab-image-converter.onrender.com (Via Usage of API key and Github Secrets)
+Features:
+Scalable & Flexible: Designed for local and global use with room for future enhancements.
+Learning Tool: Demonstrates the integration of Flask (backend) and Streamlit (frontend).
+Automation: Integrated with GitHub Actions for automated deployment using API keys.
+Deployment:
+Live at: Online Image Converter
