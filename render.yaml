@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: image-converter
+    env: python
+    branch: main  # Deploys from the main branch
+    buildCommand: "pip install -r requirements.txt"  # Installs dependencies
+    startCommand: "flask --app t6_flask.py run & streamlit run t6_streamlit.py"  # Start the Flask app
+    autoDeploy: true
+    healthCheckPath: /health  # Optional: add if you have a health endpoint
