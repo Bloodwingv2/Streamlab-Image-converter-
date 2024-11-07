@@ -11,7 +11,7 @@ The Streamlit frontend provides an intuitive interface for users to upload image
 ### **Features**:
 - **Scalable & Flexible**: Designed for local and global use with room for future enhancements.
 - **Learning Tool**: Demonstrates the integration of Flask (backend) and Streamlit (frontend).
-- **Automation**: Integrated with GitHub Actions for automated deployment using API keys.
+- **Automation**: Integrated with GitHub Actions for automated deployment during Pushes, using API keys.
 
 ### **Deployment**:
 - **Live Demo**: [Online Image Converter](https://streamlab-image-converter.onrender.com)
